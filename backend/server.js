@@ -1,12 +1,15 @@
-import express from 'express'
-import dotenv from 'dotenv'
+const express = require('express')
+const dotenv = require('dotenv')
+const path = require('path')
 
 dotenv.config()
 
 const app = express()
 
+app.use(express.static('frontend/build'))
+
 app.get('/', (req, res) => {
-    res.send('hellllo')
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 })
 
 
