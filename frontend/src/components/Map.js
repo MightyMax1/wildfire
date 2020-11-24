@@ -7,8 +7,8 @@ const Map = ({ data }) => {
     const [viewport, setViewport] = useState({
         width: window.innerWidth,
         height: window.innerHeight,
-        latitude: 37.7577,
-        longitude: -122.4376,
+        latitude: 38.29270,
+        longitude: - 103.377350,
         zoom: 3
     })
     const [locationInfo, setLocationInfo] = useState(null)
